@@ -43,12 +43,15 @@ npm install
 npx expo start          # QR-код для Expo Go: швидко, але без шифрування
 ```
 
-Власна збірка з шифруванням (EAS, без Xcode й Android Studio):
+Встановити на телефон як звичайний застосунок, з шифруванням (EAS, без Xcode й Android Studio; потрібен безкоштовний акаунт на expo.dev):
 
 ```bash
 npx eas-cli@latest login
-npx eas-cli@latest build --profile development --platform android   # або ios
+npx eas-cli@latest build --profile preview --platform android   # APK для Android
+npx eas-cli@latest build --profile preview --platform ios       # iPhone: потрібен Apple Developer
 ```
+
+Після збірки EAS дає посилання й QR-код: відкрийте його на телефоні й установіть. На iPhone спершу зареєструйте пристрій: `npx eas-cli@latest device:create`.
 
 Перевірки:
 
