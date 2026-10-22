@@ -1,0 +1,12 @@
+# Збірка APK для встановлення на Android-телефон. Запуск вручну: expo.dev → Workflows → Run.
+name: Android APK
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  build_android:
+    type: build
+    params:
+      platform: android
+      profile: preview
