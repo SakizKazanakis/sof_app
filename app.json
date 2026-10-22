@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ВСВ ССО · Щоденник",
-    "slug": "sof-app",
+    "slug": "delic",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -45,7 +45,11 @@
       "typedRoutes": true
     },
     "extra": {
-      "bookingUrl": null
-    }
+      "bookingUrl": null,
+      "eas": {
+        "projectId": "b14d7a40-7c5e-4f72-84a5-da854a8b0fd6"
+      }
+    },
+    "owner": "dikranon"
   }
 }
